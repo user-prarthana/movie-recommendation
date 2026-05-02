@@ -1,0 +1,20 @@
+title,genres,keywords,overview,release_date,vote_average,poster_path
+The Hangover,"[{'id':35,'name':'Comedy'}]","[{'id':101,'name':'bachelor'}]","A funny bachelor party story",2009-06-05,7.7,/uluhlXubGu1VxU63X9VHCLWDAYP.jpg
+Mr Bean,"[{'id':35,'name':'Comedy'}]","[{'id':102,'name':'funny'}]","A clumsy man creates humor",1997-08-03,7.5,/k3W9f5rF6L0S9Z8WQX7Z0dJp3fY.jpg
+Home Alone,"[{'id':35,'name':'Comedy'}]","[{'id':103,'name':'kid'}]","A boy defends his home",1990-11-16,8.0,/96sS0woEzf0zFS9m0Y5oKxB2mC2.jpg
+3 Idiots,"[{'id':35,'name':'Comedy'},{'id':18,'name':'Drama'}]","[{'id':104,'name':'college'}]","A fun story of students",2009-12-25,8.4,/66A9MqXOyVFCssoloscw79z8Tew.jpg
+PK,"[{'id':35,'name':'Comedy'},{'id':18,'name':'Drama'}]","[{'id':105,'name':'alien'}]","A humorous take on religion",2014-12-19,8.1,/p0iRZ2Z1Z2Z.jpg
+
+The Conjuring,"[{'id':27,'name':'Horror'}]","[{'id':106,'name':'ghost'}]","A family faces a spirit",2013-07-19,7.5,/wVYREutTvI2tmxr6ujrHT704wGF.jpg
+Annabelle,"[{'id':27,'name':'Horror'}]","[{'id':107,'name':'doll'}]","A haunted doll story",2014-10-03,6.3,/5JU9ytZJyR3zmClGmVm9q4Geqbd.jpg
+
+Drishyam,"[{'id':53,'name':'Thriller'},{'id':80,'name':'Crime'}]","[{'id':108,'name':'investigation'}]","A man hides a crime",2015-07-31,8.2,/drishyam.jpg
+Mumbai Police,"[{'id':53,'name':'Thriller'},{'id':80,'name':'Crime'}]","[{'id':109,'name':'police'}]","A mystery investigation",2013-05-03,7.8,/mp.jpg
+
+Vikram,"[{'id':28,'name':'Action'},{'id':53,'name':'Thriller'}]","[{'id':110,'name':'agent'}]","A special agent fights crime",2022-06-03,8.3,/vikram.jpg
+Kaithi,"[{'id':28,'name':'Action'}]","[{'id':111,'name':'escape'}]","A night action story",2019-10-25,8.5,/kaithi.jpg
+KGF,"[{'id':28,'name':'Action'},{'id':80,'name':'Crime'}]","[{'id':112,'name':'mafia'}]","A gangster rises to power",2018-12-21,8.2,/kgf.jpg
+Baahubali,"[{'id':28,'name':'Action'},{'id':18,'name':'Drama'}]","[{'id':113,'name':'king'}]","A warrior fights for throne",2015-07-10,8.0,/bahubali.jpg
+
+Titanic,"[{'id':10749,'name':'Romance'},{'id':18,'name':'Drama'}]","[{'id':114,'name':'love'}]","A tragic love story",1997-12-19,9.0,/titanic.jpg
+Premam,"[{'id':10749,'name':'Romance'},{'id':35,'name':'Comedy'}]","[{'id':115,'name':'love'}]","A romantic life journey",2015-05-29,8.3,/premam.jpg

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RecoFlix</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🎬 RecoFlix</h1>
+
+    <input id="movieInput" placeholder="Search movie..." onkeypress="enter(event)">
+
+    <select id="genreSelect">
+        <option value="">Browse Genre</option>
+        <option value="action">Action</option>
+        <option value="comedy">Comedy</option>
+        <option value="drama">Drama</option>
+        <option value="romance">Romance</option>
+        <option value="thriller">Thriller</option>
+        <option value="horror">Horror</option>
+    </select>
+
+    <div id="results"></div>
+</div>
+
+<script>
+function enter(e){
+    if(e.key==="Enter") loadAI();
+}
+
+async function loadAI(){
+    const title = document.getElementById("movieInput").value;
+
+    const res = await fetch("/recommend", {
+        method:"POST",
+        headers:{"Content-Type":"application/json"},
+        body: JSON.stringify({title})
+    });
+
+    const data = await res.json();
+    show(data, "Recommendations");
+}
+
+document.getElementById("genreSelect").addEventListener("change", async function(){
+    const genre = this.value;
+
+    const res = await fetch("/genre", {
+        method:"POST",
+        headers:{"Content-Type":"application/json"},
+        body: JSON.stringify({genre})
+    });
+
+    const data = await res.json();
+    show(data, genre.toUpperCase());
+});
+
+function show(data,title){
+    if(!data.length){
+        document.getElementById("results").innerHTML="<p>No results</p>";
+        return;
+    }
+
+    let html = `<h2>${title}</h2><div class="grid">`;
+
+    data.forEach(m=>{
+        html += `
+        <div class="card">
+            <img src="${m.poster}">
+            <div class="info">
+                <h3>${m.title}</h3>
+                <p>⭐ ${m.rating}</p>
+                <p>${m.overview}</p>
+            </div>
+        </div>`;
+    });
+
+    html += "</div>";
+    document.getElementById("results").innerHTML = html;
+}
+</script>
+
+</body>
+</html>
